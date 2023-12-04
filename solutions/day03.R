@@ -63,13 +63,12 @@ for(i in 1:nrow(df)){
       if(symbols$symbol[symbols_index] == "*"){
         symbols$n_neighbours[symbols_index] <- symbols$n_neighbours[symbols_index] + 1
         symbols$prod[symbols_index] <- symbols$prod[symbols_index] * as.numeric(rel$number)
-        symbols$sum[symbols_index] <- symbols$sum[symbols_index] + as.numeric(rel$number)
       }
     }
   }
 }
 
-cat("Day 3 Star 1: ", count, "\n")
+cat("Day 3 Star 1: ", count)
 
 # symbols output is something like:
 # symbol  x  y n_neighbours   prod
