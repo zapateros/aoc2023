@@ -1,4 +1,4 @@
-# Probably not the fastest solution but it works and the created dataframes are suitable for more data manipulations
+# Probably not the fastest solution but it works
 input <- readLines("input03.txt")
 
 # Transform input number data into df
