@@ -62,7 +62,7 @@ cat("Day 10 star 1: ", nrow(loop)/ 2)
 # A point is inside the loop if, when looking to the left or right the amount of barriers is an odd number
 # obiously | is a barrier, but also FJ or F--J, or L7 or L----7 (the amount of - inbetween is irrelevant)
 # F7 and LJ are not barriers because you can slip past them (they are like half loops)
-# So the steps are: take a random point (that is not part of the loop), take all the looppoints in the same y value and 
+# So the steps are: take a point (that is not part of the loop), take all the looppoints in the same y value and 
 # x higher (so you look to the right from the view of that point), remove all the -, F7 and LJ
 # Then count the amount of | F7 and LJ. If the amount is an odd number, the chosen point is inside the loop
 loop  <- loop[order(loop$y, loop$x),]
